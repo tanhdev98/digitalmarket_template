@@ -1,0 +1,10 @@
+@media screen and (min-width: 576px) {
+    .section-intro {
+        margin-bottom: 3rem;
+    }
+
+    section {
+        padding: 4.5rem 0;
+    }
+}
+
