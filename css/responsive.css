@@ -1,3 +1,9 @@
+@media screen and (max-width: 400px) {
+    .search-wrap.active{
+        width: 210px;
+    }
+}
+
 @media screen and (min-width: 576px) {
     .section-intro {
         margin-bottom: 3rem;
@@ -7,4 +13,3 @@
         padding: 4.5rem 0;
     }
 }
-

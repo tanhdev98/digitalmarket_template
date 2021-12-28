@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
-    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon/favicon-32x32.png" type="favicon-32x32">
+
+    <link rel="icon" href="../favicon/favicon-16x16.png" type="favicon-16x16">
     <!-- title -->
     <title>Digital Market</title>
     <!-- flickity v2.2 -->
@@ -28,10 +30,11 @@
         <header class="p-3 bg-dark-blue text-white">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <a href="../html/index.html"
+                        class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
                         <img src="../img/logo.png" alt="logo" class="img-fluid logo">
                     </a>
-                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 navbar-menu">
                         <li>
                             <a href="#" class="nav-link px-2 text-secondary">Home</a>
                         </li>
@@ -42,17 +45,29 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarCategory">
                                 <li>
-                                    <a class="dropdown-item" href="../code.html"><i class="fas fa-code"></i> Code</a>
+                                    <a class="dropdown-item" href="../html/category.html"><i class="fas fa-code"></i>
+                                        Code</a>
                                 </li>
-                                <li><a class="dropdown-item" href="../graphics.html"><i class="fas fa-bezier-curve"></i>
-                                        Graphics</a></li>
-                                <li><a class="dropdown-item" href="../fonts.html"><i class="fas fa-font"></i> Fonts</a>
+                                <li>
+                                    <a class="dropdown-item" href="../html/category.html"><i
+                                            class="fas fa-bezier-curve"></i>
+                                        Graphics</a>
                                 </li>
-                                <li><a class="dropdown-item" href="../themes.html"><i class="fas fa-columns"></i>
-                                        Themes</a></li>
-                                <li><a class="dropdown-item" href="../template.html"><i class="fas fa-file"></i>
-                                        Template</a></li>
-                                <li><a class="dropdown-item" href="../icons.html"><i class="fas fa-icons"></i> Icons</a>
+                                <li>
+                                    <a class="dropdown-item" href="../html/category.html"><i class="fas fa-font"></i>
+                                        Fonts</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../html/category.html"><i class="fas fa-columns"></i>
+                                        Themes</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../html/category.html"><i class="fas fa-file"></i>
+                                        Template</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../html/category.html"><i class="fas fa-icons"></i>
+                                        Icons</a>
                                 </li>
                             </ul>
                         </li>
@@ -64,8 +79,13 @@
                         </li>
                     </ul>
                     <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                        <input type="search" class="form-control form-control-dark" placeholder="Search...">
-                        <button type="button" class="btn btn-outline-light"><i class="fas fa-search"></i></button>
+                        <div class="search-wrap">
+                            <div class="icon"></div>
+                            <div class="input">
+                                <input type="text" placeholder="Search" id="search-box">
+                            </div>
+                            <!-- <div class="clear"></div> -->
+                        </div>
                     </form>
                     <div class="card-header me-lg-3">
                         <a href="../html/checkout.html" role="button" class="card-button">
@@ -141,42 +161,42 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-6 col-md-4 col-lg-2">
-                            <a style="background-color: #4582ec;" href="#"
+                            <a style="background-color: #4582ec;" href="../html/category.html"
                                 class="d-flex align-items-center d-md-block rounded mb-3 mb-lg-0 p-2 p-md-2 p-lg-3 p-xl-2 text-white text-center">
                                 <span class="me-3 me-md-0 mb-0 mb-md-2 fas fa-code"></span>
                                 <p class="fw-bold">Code</p>
                             </a>
                         </div>
                         <div class="col-6 col-md-4 col-lg-2">
-                            <a style="background-color: #018655;" href="#"
+                            <a style="background-color: #018655;" href="../html/category.html"
                                 class="d-flex align-items-center d-md-block rounded mb-3 mb-lg-0 p-2 p-md-2 p-lg-3 p-xl-2 text-white text-center">
                                 <span class="me-3 me-md-0 mb-0 mb-md-2 fas fa-bezier-curve"></span>
                                 <p class="fw-bold">Graphics</p>
                             </a>
                         </div>
                         <div class="col-6 col-md-4 col-lg-2">
-                            <a style="background-color: #c9302c;" href="#"
+                            <a style="background-color: #c9302c;" href="../html/category.html"
                                 class="d-flex align-items-center d-md-block rounded mb-3 mb-lg-0 p-2 p-md-2 p-lg-3 p-xl-2 text-white text-center">
                                 <span class="me-3 me-md-0 mb-0 mb-md-2 fas fa-font"></span>
                                 <p class="fw-bold">Fonts</p>
                             </a>
                         </div>
                         <div class="col-6 col-md-4 col-lg-2">
-                            <a style="background-color: #ec971f;" href="#"
+                            <a style="background-color: #ec971f;" href="../html/category.html"
                                 class="d-flex align-items-center d-md-block rounded mb-3 mb-lg-0 p-2 p-md-2 p-lg-3 p-xl-2 text-white text-center">
                                 <span class="me-3 me-md-0 mb-0 mb-md-2 fas fa-columns"></span>
                                 <p class="fw-bold">Themes</p>
                             </a>
                         </div>
                         <div class="col-6 col-md-4 col-lg-2">
-                            <a style="background-color: #117a8b;" href="#"
+                            <a style="background-color: #117a8b;" href="../html/category.html"
                                 class="d-flex align-items-center d-md-block rounded mb-3 mb-lg-0 p-2 p-md-2 p-lg-3 p-xl-2 text-white text-center">
                                 <span class="me-3 me-md-0 mb-0 mb-md-2 fas fa-file"></span>
                                 <p class="fw-bold">Templates</p>
                             </a>
                         </div>
                         <div class="col-6 col-md-4 col-lg-2">
-                            <a style="background-color: #1c2b3e;" href="#"
+                            <a style="background-color: #1c2b3e;" href="../html/category.html"
                                 class="d-flex align-items-center d-md-block rounded mb-3 mb-lg-0 p-2 p-md-2 p-lg-3 p-xl-2 text-white text-center">
                                 <span class="me-3 me-md-0 mb-0 mb-md-2 fas fa-icons"></span>
                                 <p class="fw-bold">Icons</p>
@@ -777,6 +797,8 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- bootstrap 5 js -->
     <script src="../js/bootstrap.min.js"></script>
+    <!-- search js -->
+    <script src="../js/search.js"></script>
     <!-- common js -->
     <script src="../js/common.js"></script>
     <script>
