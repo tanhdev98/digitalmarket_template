@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" href="../favicon/favicon-32x32.png" type="favicon-32x32">
+
+    <link rel="icon" href="../favicon/favicon-16x16.png" type="favicon-16x16">
+    <!-- title -->
+    <title>Digital Market</title>
+    <!-- flickity v2.2 -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- bootstrap 5.0.2 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- reset css -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- font-awsome 5.15.3 -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- common css -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- common responsive -->
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div id="page" class="d-flex flex-column bg-gray">
+        <header class="p-3 bg-dark-blue text-white">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="../html/index.html"
+                        class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <img src="../img/logo.png" alt="logo" class="img-fluid logo">
+                    </a>
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 navbar-menu">
+                        <li>
+                            <a href="../html/index.html" class="nav-link px-2 text-white">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarCategory" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="account-text">Category</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarCategory">
+                                <li>
+                                    <a class="dropdown-item" href="../html/category.html"><i class="fas fa-code"></i>
+                                        Code</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../html/category.html"><i
+                                            class="fas fa-bezier-curve"></i>
+                                        Graphics</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html"><i class="fas fa-font"></i>
+                                        Fonts</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../html/category.html"><i class="fas fa-columns"></i>
+                                        Themes</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html"><i class="fas fa-file"></i>
+                                        Template</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html"><i class="fas fa-icons"></i>
+                                        Icons</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../html/about.html" class="nav-link px-2  text-secondary">About</a>
+                        </li>
+                        <li>
+                            <a href="../html/contact.html" class="nav-link px-2 text-white">Contact</a>
+                        </li>
+                    </ul>
+                    <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <div class="search-wrap">
+                            <div class="icon"></div>
+                            <div class="input">
+                                <input type="text" placeholder="Search" id="search-box">
+                            </div>
+                            <!-- <div class="clear"></div> -->
+                        </div>
+                    </form>
+                    <div class="card-header me-lg-3">
+                        <a href="../html/checkout.html" role="button" class="card-button">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>0</span>
+                        </a>
+                    </div>
+                    <div class="text-end auth">
+                        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarUser" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                            <span class="account-text">My Account</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarUser">
+                            <li><a class="dropdown-item" href="../profile.html">Setting</a></li>
+                            <li><a class="dropdown-item" href="../history.html">History</a></li>
+                            <li><a class="dropdown-item" href="../index.html" id="logout">Logout</a></li>
+                        </ul> -->
+                        <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal"
+                            data-bs-target=".account-modal"><i class="fas fa-sign-in-alt"></i> Login</button>
+                        <button type="button" class="btn btn-warning">Sign-up</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main-container">
+            <section class="bg-gradient space-sm">
+                <div class="container">
+                    <h1 class="fw-normal text-center">
+                        Get to know us
+                    </h1>
+                </div>
+            </section>
+            <section class="space-lg head-about">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-9 col-lg-8 text-center mb-4">
+                            <h1 class="display-3">Ready, Set, Grow.</h1>
+                            <span class="lead">
+                                DigitalMarket is dedicated to putting you front & center, we’re committed to providing
+                                an unparalleled level of service to you, the product.</span>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <div class="video-cover rounded box-shadow video-cover-playing">
+                                <div class="embed-res embed-res-16by9">
+                                    <iframe
+                                        data-src="https://www.youtube.com/embed/vf1YjmAZUYs?autoplay=0&mute=0&showinfo=0&rel=0"
+                                        src="https://www.youtube.com/embed/vf1YjmAZUYs?autoplay=0&mute=0&showinfo=0&rel=0"
+                                        allowfullscreen class="embed-res-item"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center bg-white param">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="text-brand fas fa-database" style="font-size: 48px;"></span>
+                            <div>
+                                <h3 class="my-3 counter" data-bs-target="3000">0</h3>
+                                <h3>+ Products</h3>
+                            </div>
+                            <p>Each product is individually reviewed by our professional team of trained technical
+                                advisors.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="text-brand fas fa-user" style="font-size: 48px;"></span>
+                            <div>
+                                <h3 class="my-3 counter" data-bs-target="50000">0</h3>
+                                <h3>+ Members</h3>
+                            </div>
+                            <p>We are a steadily growing community of designers & developers from around the world.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="text-brand fas fa-shopping-cart" style="font-size: 48px;"></span>
+                            <div>
+                                <h3 class="my-3 counter" data-bs-target="200">0</h3>
+                                <h3>+ Shops</h3>
+                            </div>
+                            <p>We work directly with all our authors to ensure products & shops are set up for success.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center param">
+                <div class="container">
+                    <h2 class="mb-2">Meet Our Team</h2>
+                    <p class="mb-5">A+ Agile team with the right mix of skillsets & vision.</p>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-md-4 col-lg-2 people">
+                            <p>
+                                <img class="rounded-circle" src="../img/people/p1.jpg">
+                            </p>
+                            <p class="mb-4">
+                                <b>Alex Suprun</b>
+                                <br>
+                                Co-founder, CEO, Head of Community
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2 people">
+                            <p>
+                                <img class="rounded-circle" src="../img/people/p2.jpg">
+                            </p>
+                            <p class="mb-4">
+                                <b>May Gauthier</b>
+                                <br>
+                                Co-founder, CTO, Head of Product
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2 people">
+                            <p>
+                                <img class="rounded-circle" src="../img/people/p3.jpg">
+                            </p>
+                            <p class="mb-4">
+                                <b>Leio McLaren</b>
+                                <br>
+                                Pre-Senior Crayon Evangelist
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2 people">
+                            <p>
+                                <img class="rounded-circle" src="../img/people/p4.jpg">
+                            </p>
+                            <p class="mb-4">
+                                <b>Jake Nackos</b>
+                                <br>
+                                Back-end Developer
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2 people">
+                            <p>
+                                <img class="rounded-circle" src="../img/people/p5.jpg">
+                            </p>
+                            <p class="mb-4">
+                                <b>Nicolas Horn</b>
+                                <br>
+                                Wizard of Light Bulb Moments
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2 people">
+                            <p>
+                                <img class="rounded-circle" src="../img/people/p6.jpg">
+                            </p>
+                            <p class="mb-4">
+                                <b>Vicky Hladynets</b>
+                                <br>
+                                Pixel Magician
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-dark-blue text-light footer-long py-4 py-lg-5 px-2 px-md-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3 mb-3 mb-md-0">
+                        <a href="">
+                            <img src="../img/logo.png" alt="" class="img-fluid logo mb-3">
+                        </a>
+                        <p class="text-muted">Coryright © 2021 by <a href="https://github.com/tanhdev98">tanhdev98</a>.
+                            <br>
+                            All rights reserved.</p>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-9">
+                        <div class="row no-gutters">
+                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                                <h6>Make Money</h6>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Open a Shop</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Commission Structures</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Advertise Your Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Licenses</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                                <h6>Buy Good</h6>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Today's Deals</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Pay What You Want</a>
+                                    </li>
+                                    <li>
+                                        <a href="">One Dollar Deal</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Monthly Bundle</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                                <h6>Resources</h6>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Help Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Discussions</a>
+                                    </li>
+                                    <li>
+                                        <a href="">FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                                <h6>Company</h6>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Terms of Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- jQuery 3.6.0 -->
+    <script src="../js/jquery-3.6.0.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <!-- flickity v2.2 js -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- bootstrap 5 js -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- search js -->
+    <script src="../js/search.js"></script>
+    <!-- common js -->
+    <script src="../js/common.js"></script>
+
+    <script>
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-bs-target');
+                const count = +counter.innerText;
+                const inc = target / speed;
+                if (count < target) {
+                    counter.innerText = count + inc;
+                    setTimeout(updateCount, 1);
+                } else {
+                    count.innerText = target;
+                }
+            }
+            updateCount();
+        });
+    </script>
+</body>
+
+</html>

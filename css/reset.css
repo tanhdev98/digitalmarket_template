@@ -35,7 +35,20 @@ h6 {
     font-size: 16px;
 }
 
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+    margin-bottom: 1.5rem;
+    color: #343a40;
+    font-weight: 600;
+}
+
 /* Override the bootstrap defaults */
+.display-1,
+.display-2,
+.display-3,
+.display-4,
 .h1,
 .h2,
 .h3,

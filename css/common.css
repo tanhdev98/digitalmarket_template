@@ -214,9 +214,8 @@ section {
     font-size: 30px;
 }
 
-p:last-child {
+.category p:last-child {
     margin-bottom: 0;
-    font-weight: 600;
 }
 
 /* feature list */
@@ -389,4 +388,91 @@ p:last-child {
 .avatar.avatar-sm {
     width: 3rem;
     height: 3rem;
+}
+
+/* about us */
+.bg-gray {
+    background: #f8f9fa;
+}
+
+.text-brand {
+    color: var(--color-brand);
+}
+
+.head-about .display-3 {
+    font-weight: 400 !important;
+}
+
+.lead {
+    font-size: 1.24rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+/* video cover*/
+.video-cover {
+    background: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.box-shadow {
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+}
+
+.embed-res {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.embed-res::before {
+    display: block;
+    content: "";
+}
+
+.embed-res-16by9:before {
+    padding-top: 56.25%;
+}
+
+
+.embed-res .embed-res-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.param h2,
+.param h3 {
+    color: #000;
+    font-weight: 400 !important;
+}
+
+.param h3 {
+    display: inline-block;
+}
+
+.people img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    transition: .3s linear;
+}
+
+
+.people:hover img {
+    transform: scale(1.25);
+}
+
+.people:hover p.mb-4 {
+    transform: scale(5px);
+    position: relative;
+    top: 20px;
 }
