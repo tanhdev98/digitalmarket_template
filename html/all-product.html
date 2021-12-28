@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <div id="page">
+    <div id="page" class="d-flex flex-column">
         <header class="p-3 bg-dark-blue text-white">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -36,11 +36,11 @@
                     </a>
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 navbar-menu">
                         <li>
-                            <a href="#" class="nav-link px-2 text-secondary">Home</a>
+                            <a href="../html/index.html" class="nav-link px-2 text-white">Home</a>
                         </li>
                         <li>
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarCategory" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarCategory"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="account-text">Category</span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarCategory">
@@ -48,25 +48,17 @@
                                     <a class="dropdown-item" href="../html/category.html"><i class="fas fa-code"></i>
                                         Code</a>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" href="../html/category.html"><i
+                                <li><a class="dropdown-item" href="../html/category.html"><i
                                             class="fas fa-bezier-curve"></i>
-                                        Graphics</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="../html/category.html"><i class="fas fa-font"></i>
+                                        Graphics</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html"><i class="fas fa-font"></i>
                                         Fonts</a>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" href="../html/category.html"><i class="fas fa-columns"></i>
-                                        Themes</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="../html/category.html"><i class="fas fa-file"></i>
-                                        Template</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="../html/category.html"><i class="fas fa-icons"></i>
+                                <li><a class="dropdown-item" href="../html/category.html"><i class="fas fa-columns"></i>
+                                        Themes</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html"><i class="fas fa-file"></i>
+                                        Template</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html"><i class="fas fa-icons"></i>
                                         Icons</a>
                                 </li>
                             </ul>
@@ -112,112 +104,118 @@
             </div>
         </header>
         <main class="main-container">
-            <section class="bg-dark-blue text-center">
+            <section class="bg-gradient space-sm text-center">
                 <div class="container">
-                    <div class="row justify-content-center section-intro text-white">
-                        <div class="col-12">
-                            <h1>Premium Digital Products Marketplace</h1>
-                            <div class="opacity-50 mt-2 d-none d-md-block">You can find some of the best fonts,
-                                graphics,
-                                scripts, themes, templates & code snippets available on the web here on Digital Market;
-                                affordably priced.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="main-carousel">
-                    <div class="carousel-cell col-9 col-md-8 col-lg-5 text-center">
-                        <a href="" class="d-block mb-3">
-                            <img width="800" height="420" src="../img/deal-kingcomposer-800x420.png" alt=""
-                                class="img-fluid rounded">
-                        </a>
-                        <span class="h6 text-white-50">Grab Professional Logo Without Draining Your Wallet</span>
-                    </div>
-                    <div class="carousel-cell col-9 col-md-8 col-lg-5 text-center">
-                        <a href="" class="d-block mb-3">
-                            <img width="800" height="420" src="../img/deal-visualmodo-1-800x420.png" alt=""
-                                class="img-fluid rounded">
-                        </a>
-                        <span class="h6 text-white-50">Lifetime Access to Powerful WordPress Page Builder Plugin:
-                            KingComposer Pro (Developer License) Only $89</span>
-                    </div>
-                    <div class="carousel-cell col-9 col-md-8 col-lg-5 text-center">
-                        <a href="" class="d-block mb-3">
-                            <img width="800" height="420" src="../img/logo-bundle-800x420.png" alt=""
-                                class="img-fluid rounded">
-                        </a> <span class="h6 text-white-50">Lifetime Access to 30+ WordPress Themes From Visualmodo for
-                            Only
-                            $49</span>
-                    </div>
-                    <div class="carousel-cell col-9 col-md-8 col-lg-5 text-center">
-                        <a href="" class="d-block mb-3">
-                            <img width="800" height="420" src="../img/todaydeal-mobileuikits-800x420.png" alt=""
-                                class="img-fluid rounded">
-                        </a>
-                        <span class="h6 text-white-50">Mobile UI Kits Bundle at $39 Only</span>
+                    <h1 class="fw-normal">
+                        All Products
+                    </h1>
+                    <div class="opacity-50 mt-1 d-none d-md-block">
+                        Discover all of products we have here on DigitalMarket
                     </div>
                 </div>
             </section>
-            <section class="border-0 pt-3 pt-md-4 pb-0 pb-md-3 category">
+            <section class="space-sm pt-3 all-product">
                 <div class="container">
+                    <!-- category -->
+                    <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+                        <h1 class="h4 mb-0 text-dark">Graphics</h2>
+                            <a href="../html/category.html">See more →</a>
+                    </div>
                     <div class="row">
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <a style="background-color: #4582ec;" href="../html/category.html"
-                                class="d-flex align-items-center d-md-block rounded mb-3 mb-lg-0 p-2 p-md-2 p-lg-3 p-xl-2 text-white text-center">
-                                <span class="me-3 me-md-0 mb-0 mb-md-2 fas fa-code"></span>
-                                <p class="fw-bold">Code</p>
-                            </a>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card card-sm">
+                                <a href="../html/product-detail.html">
+                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
+                                            Only $69
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            by
+                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
+                                            in
+                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
+                                        </div>
+                                        <div class="bg-primary text-white small rounded px-1">
+                                            $39
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <a style="background-color: #018655;" href="../html/category.html"
-                                class="d-flex align-items-center d-md-block rounded mb-3 mb-lg-0 p-2 p-md-2 p-lg-3 p-xl-2 text-white text-center">
-                                <span class="me-3 me-md-0 mb-0 mb-md-2 fas fa-bezier-curve"></span>
-                                <p class="fw-bold">Graphics</p>
-                            </a>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card card-sm">
+                                <a href="../html/product-detail.html">
+                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
+                                            Only $69
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            by
+                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
+                                            in
+                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
+                                        </div>
+                                        <div class="bg-primary text-white small rounded px-1">
+                                            $39
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <a style="background-color: #c9302c;" href="../html/category.html"
-                                class="d-flex align-items-center d-md-block rounded mb-3 mb-lg-0 p-2 p-md-2 p-lg-3 p-xl-2 text-white text-center">
-                                <span class="me-3 me-md-0 mb-0 mb-md-2 fas fa-font"></span>
-                                <p class="fw-bold">Fonts</p>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <a style="background-color: #ec971f;" href="../html/category.html"
-                                class="d-flex align-items-center d-md-block rounded mb-3 mb-lg-0 p-2 p-md-2 p-lg-3 p-xl-2 text-white text-center">
-                                <span class="me-3 me-md-0 mb-0 mb-md-2 fas fa-columns"></span>
-                                <p class="fw-bold">Themes</p>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <a style="background-color: #117a8b;" href="../html/category.html"
-                                class="d-flex align-items-center d-md-block rounded mb-3 mb-lg-0 p-2 p-md-2 p-lg-3 p-xl-2 text-white text-center">
-                                <span class="me-3 me-md-0 mb-0 mb-md-2 fas fa-file"></span>
-                                <p class="fw-bold">Templates</p>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <a style="background-color: #1c2b3e;" href="../html/category.html"
-                                class="d-flex align-items-center d-md-block rounded mb-3 mb-lg-0 p-2 p-md-2 p-lg-3 p-xl-2 text-white text-center">
-                                <span class="me-3 me-md-0 mb-0 mb-md-2 fas fa-icons"></span>
-                                <p class="fw-bold">Icons</p>
-                            </a>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card card-sm">
+                                <a href="../html/product-detail.html">
+                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
+                                            Only $69
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            by
+                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
+                                            in
+                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
+                                        </div>
+                                        <div class="bg-primary text-white small rounded px-1">
+                                            $39
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="border-0 pt-3 pt-md-4 pb-0 pb-md-3">
-                <div class="container">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <h2 class="h4 mb-0 text-dark">
-                            Popular Products
-                        </h2>
-                        <a href="/html/items.html" class="d-flex align-items-center fw-bold">
-                            Explore Popular Products
-                            <i class="fas fa-angle-right ms-1 text-small"></i>
-                        </a>
+                    <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+                        <h1 class="h4 mb-0 text-dark">Fonts</h2>
+                            <a href="../html/category.html">See more →</a>
                     </div>
-                    <ul class="row feature-list feature-list-sm">
-                        <li class="col-md-6 col-lg-4">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4">
                             <div class="card card-sm">
                                 <a href="../html/product-detail.html">
                                     <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
@@ -245,8 +243,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="col-md-6 col-lg-4">
+                        </div>
+                        <div class="col-md-6 col-xl-4">
                             <div class="card card-sm">
                                 <a href="../html/product-detail.html">
                                     <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
@@ -274,8 +272,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="col-md-6 col-lg-4">
+                        </div>
+                        <div class="col-md-6 col-xl-4">
                             <div class="card card-sm">
                                 <a href="../html/product-detail.html">
                                     <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
@@ -303,285 +301,17 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="col-md-6 col-lg-4">
-                            <div class="card card-sm">
-                                <a href="../html/product-detail.html">
-                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
-                                        class="card-img-top">
-                                </a>
-                                <div class="card-body px-2">
-                                    <div class="mx-1">
-                                        <a href="" class="text-dark fw-bold">
-                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
-                                            Only $69
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-footer px-2">
-                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
-                                        <div class="text-small text-muted">
-                                            by
-                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
-                                            in
-                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
-                                        </div>
-                                        <div class="bg-primary text-white small rounded px-1">
-                                            $39
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-md-6 col-lg-4">
-                            <div class="card card-sm">
-                                <a href="../html/product-detail.html">
-                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
-                                        class="card-img-top">
-                                </a>
-                                <div class="card-body px-2">
-                                    <div class="mx-1">
-                                        <a href="" class="text-dark fw-bold">
-                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
-                                            Only $69
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-footer px-2">
-                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
-                                        <div class="text-small text-muted">
-                                            by
-                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
-                                            in
-                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
-                                        </div>
-                                        <div class="bg-primary text-white small rounded px-1">
-                                            $39
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-md-6 col-lg-4">
-                            <div class="card card-sm">
-                                <a href="../html/product-detail.html">
-                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
-                                        class="card-img-top">
-                                </a>
-                                <div class="card-body px-2">
-                                    <div class="mx-1">
-                                        <a href="" class="text-dark fw-bold">
-                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
-                                            Only $69
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-footer px-2">
-                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
-                                        <div class="text-small text-muted">
-                                            by
-                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
-                                            in
-                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
-                                        </div>
-                                        <div class="bg-primary text-white small rounded px-1">
-                                            $39
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-md-6 col-lg-4">
-                            <div class="card card-sm">
-                                <a href="../html/product-detail.html">
-                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
-                                        class="card-img-top">
-                                </a>
-                                <div class="card-body px-2">
-                                    <div class="mx-1">
-                                        <a href="" class="text-dark fw-bold">
-                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
-                                            Only $69
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-footer px-2">
-                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
-                                        <div class="text-small text-muted">
-                                            by
-                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
-                                            in
-                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
-                                        </div>
-                                        <div class="bg-primary text-white small rounded px-1">
-                                            $39
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-md-6 col-lg-4">
-                            <div class="card card-sm">
-                                <a href="../html/product-detail.html">
-                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
-                                        class="card-img-top">
-                                </a>
-                                <div class="card-body px-2">
-                                    <div class="mx-1">
-                                        <a href="" class="text-dark fw-bold">
-                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
-                                            Only $69
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-footer px-2">
-                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
-                                        <div class="text-small text-muted">
-                                            by
-                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
-                                            in
-                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
-                                        </div>
-                                        <div class="bg-primary text-white small rounded px-1">
-                                            $39
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-md-6 col-lg-4">
-                            <div class="card card-sm">
-                                <a href="../html/product-detail.html">
-                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
-                                        class="card-img-top">
-                                </a>
-                                <div class="card-body px-2">
-                                    <div class="mx-1">
-                                        <a href="" class="text-dark fw-bold">
-                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
-                                            Only $69
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-footer px-2">
-                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
-                                        <div class="text-small text-muted">
-                                            by
-                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
-                                            in
-                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
-                                        </div>
-                                        <div class="bg-primary text-white small rounded px-1">
-                                            $39
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-md-6 col-lg-4">
-                            <div class="card card-sm">
-                                <a href="../html/product-detail.html">
-                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
-                                        class="card-img-top">
-                                </a>
-                                <div class="card-body px-2">
-                                    <div class="mx-1">
-                                        <a href="" class="text-dark fw-bold">
-                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
-                                            Only $69
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-footer px-2">
-                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
-                                        <div class="text-small text-muted">
-                                            by
-                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
-                                            in
-                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
-                                        </div>
-                                        <div class="bg-primary text-white small rounded px-1">
-                                            $39
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-md-6 col-lg-4">
-                            <div class="card card-sm">
-                                <a href="../html/product-detail.html">
-                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
-                                        class="card-img-top">
-                                </a>
-                                <div class="card-body px-2">
-                                    <div class="mx-1">
-                                        <a href="" class="text-dark fw-bold">
-                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
-                                            Only $69
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-footer px-2">
-                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
-                                        <div class="text-small text-muted">
-                                            by
-                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
-                                            in
-                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
-                                        </div>
-                                        <div class="bg-primary text-white small rounded px-1">
-                                            $39
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-md-6 col-lg-4">
-                            <div class="card card-sm">
-                                <a href="../html/product-detail.html">
-                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
-                                        class="card-img-top">
-                                </a>
-                                <div class="card-body px-2">
-                                    <div class="mx-1">
-                                        <a href="" class="text-dark fw-bold">
-                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
-                                            Only $69
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-footer px-2">
-                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
-                                        <div class="text-small text-muted">
-                                            by
-                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
-                                            in
-                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
-                                        </div>
-                                        <div class="bg-primary text-white small rounded px-1">
-                                            $39
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="border-0 pt-2 pt-md-4 pb-0 pb-md-3">
-                <div class="container">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <h2 class="h4 mb-0 text-dark">Lastet From Blog</h2>
-                        <a href="../html/blog-list.html" class="d-flex align-items-center fw-bold">
-                            Browse More Posts
-                            <i class="fas fa-angle-right ms-1 text-small"></i>
-                        </a>
+                        </div>
                     </div>
-                    <ul class="row feature-list feature-list-sm">
-                        <li class="col-md-6 col-lg-3">
+                    <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+                        <h1 class="h4 mb-0 text-dark">Themes</h2>
+                            <a href="../html/category.html">See more →</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4">
                             <div class="card card-sm">
                                 <a href="../html/product-detail.html">
-                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
                                         class="card-img-top">
                                 </a>
                                 <div class="card-body px-2">
@@ -595,18 +325,22 @@
                                 <div class="card-footer px-2">
                                     <div class="mx-1 d-flex justify-content-between alight-items-center">
                                         <div class="text-small text-muted">
-                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
-                                            on
-                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                            by
+                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
+                                            in
+                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
+                                        </div>
+                                        <div class="bg-primary text-white small rounded px-1">
+                                            $39
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="col-md-6 col-lg-3">
+                        </div>
+                        <div class="col-md-6 col-xl-4">
                             <div class="card card-sm">
                                 <a href="../html/product-detail.html">
-                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
                                         class="card-img-top">
                                 </a>
                                 <div class="card-body px-2">
@@ -620,18 +354,22 @@
                                 <div class="card-footer px-2">
                                     <div class="mx-1 d-flex justify-content-between alight-items-center">
                                         <div class="text-small text-muted">
-                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
-                                            on
-                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                            by
+                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
+                                            in
+                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
+                                        </div>
+                                        <div class="bg-primary text-white small rounded px-1">
+                                            $39
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="col-md-6 col-lg-3">
+                        </div>
+                        <div class="col-md-6 col-xl-4">
                             <div class="card card-sm">
                                 <a href="../html/product-detail.html">
-                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
                                         class="card-img-top">
                                 </a>
                                 <div class="card-body px-2">
@@ -645,18 +383,28 @@
                                 <div class="card-footer px-2">
                                     <div class="mx-1 d-flex justify-content-between alight-items-center">
                                         <div class="text-small text-muted">
-                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
-                                            on
-                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                            by
+                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
+                                            in
+                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
+                                        </div>
+                                        <div class="bg-primary text-white small rounded px-1">
+                                            $39
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="col-md-6 col-lg-3">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+                        <h1 class="h4 mb-0 text-dark">Templates</h2>
+                            <a href="../html/category.html">See more →</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4">
                             <div class="card card-sm">
                                 <a href="../html/product-detail.html">
-                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
                                         class="card-img-top">
                                 </a>
                                 <div class="card-body px-2">
@@ -670,15 +418,170 @@
                                 <div class="card-footer px-2">
                                     <div class="mx-1 d-flex justify-content-between alight-items-center">
                                         <div class="text-small text-muted">
-                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
-                                            on
-                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                            by
+                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
+                                            in
+                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
+                                        </div>
+                                        <div class="bg-primary text-white small rounded px-1">
+                                            $39
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card card-sm">
+                                <a href="../html/product-detail.html">
+                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
+                                            Only $69
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            by
+                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
+                                            in
+                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
+                                        </div>
+                                        <div class="bg-primary text-white small rounded px-1">
+                                            $39
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card card-sm">
+                                <a href="../html/product-detail.html">
+                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
+                                            Only $69
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            by
+                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
+                                            in
+                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
+                                        </div>
+                                        <div class="bg-primary text-white small rounded px-1">
+                                            $39
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+                        <h1 class="h4 mb-0 text-dark">Code</h2>
+                            <a href="../html/category.html">See more →</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card card-sm">
+                                <a href="../html/product-detail.html">
+                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
+                                            Only $69
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            by
+                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
+                                            in
+                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
+                                        </div>
+                                        <div class="bg-primary text-white small rounded px-1">
+                                            $39
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card card-sm">
+                                <a href="../html/product-detail.html">
+                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
+                                            Only $69
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            by
+                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
+                                            in
+                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
+                                        </div>
+                                        <div class="bg-primary text-white small rounded px-1">
+                                            $39
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card card-sm">
+                                <a href="../html/product-detail.html">
+                                    <img width="400" height="210" src="../img/product/autowork-400x210.png" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            Lifetime Access to All Premium Extensions from Meta Box WordPress Plugin for
+                                            Only $69
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            by
+                                            <a href="" class="text-dark fw-bold">KopaTheme</a>
+                                            in
+                                            <a href="" class="text-dark fw-bold">WordPress Themes</a>
+                                        </div>
+                                        <div class="bg-primary text-white small rounded px-1">
+                                            $39
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -783,18 +686,6 @@
     <script src="../js/search.js"></script>
     <!-- common js -->
     <script src="../js/common.js"></script>
-    <script>
-        $('.main-carousel').flickity({
-            // options
-            cellAlign: "center",
-            contain: true,
-            prevNextButtons: false,
-            pageDots: false,
-            wrapAround: true,
-            autoPlay: 5000,
-            imagesLoaded: true
-        });
-    </script>
 </body>
 
 </html>
