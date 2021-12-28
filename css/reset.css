@@ -9,7 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color: #999;
+    color: #495057;
     font-size: 14px;
     line-height: 24px;
     position: relative;
@@ -270,6 +270,7 @@ h6:last-child {
 }
 
 @media (max-width:575.98px) {
+
     .h1,
     h1 {
         font-size: 2rem;
@@ -339,6 +340,7 @@ h6.text-uppercase {
 }
 
 @media (max-width:991.98px) {
+
     .h1,
     h1 {
         font-size: 1.875rem

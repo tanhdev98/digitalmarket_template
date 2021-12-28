@@ -1,10 +1,16 @@
 :root {
     --color-brand: #23CEA6;
     --color-head: #1c2b3e;
+    --color-text: #495057;
 }
 
 header {
     border-bottom: 1px solid hsla(0, 0%, 100%, .05);
+}
+
+
+.opacity-50 {
+    opacity: .5;
 }
 
 .search-wrap {
@@ -287,8 +293,6 @@ p:last-child {
 }
 
 .navbar-menu .dropdown-menu>li {
-    display: inline-block;
-    width: 150px;
     transition: .2s linear;
 }
 
@@ -342,4 +346,43 @@ p:last-child {
     padding-bottom: .375rem;
     height: calc(1.8125rem + 2px);
     font-size: 75%;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.media-body {
+    flex: 1;
+}
+
+.btn-add-cart i {
+    transition: .5s linear;
+}
+
+.btn-add-cart:hover i {
+    position: relative;
+    transform: rotateY(360deg);
+}
+
+/* avatar */
+.avatar {
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.avatar.avatar-sm {
+    width: 3rem;
+    height: 3rem;
 }
