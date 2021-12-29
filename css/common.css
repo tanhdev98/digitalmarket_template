@@ -4,6 +4,10 @@
     --color-text: #495057;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     border-bottom: 1px solid hsla(0, 0%, 100%, .05);
 }
@@ -469,10 +473,119 @@ section {
 
 .people:hover img {
     transform: scale(1.25);
+    box-shadow: 4px 3px 38px -12px #000;
 }
 
 .people:hover p.mb-4 {
     transform: scale(5px);
     position: relative;
     top: 20px;
+}
+
+/* contact */
+.info-wrap {
+    background: #292d33;
+    color: #fff;
+}
+
+.color-gray {
+    color: #999 !important;
+}
+
+.info-wrap .info-element {
+    padding: 30px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.info-wrap .info-element .icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #fff 1px solid;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.info-wrap .info-element .icon-wrap>i {
+    font-size: 48px;
+}
+
+.info-wrap .info-element h5 {
+    font-size: 1rem;
+}
+
+.info-wrap .info-element p {
+    font-size: .8rem;
+    line-height: 1.4;
+}
+
+.info-wrap .info-element .social-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-wrap .info-element .social-group .social-url {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.site {
+    min-height: 100vh;
+}
+
+/* checkout */
+.is-empty {
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #999;
+    text-align: center;
+    border-radius: 10px;
+    /* border: 1px #eee solid; */
+    padding: 60px;
+}
+
+.is-empty h4 {
+    color: var(--color-brand);
+}
+
+.btn-brand {
+    background: var(--color-brand);
+    color: #fff;
+    border-radius: 25px;
+    padding: 15px 25px;
+    font-size: 20px;
+    transition: .2s linear;
+}
+
+.btn-brand:hover {
+    color: var(--color-head);
+}
+
+.is-empty:hover {
+    box-shadow: 3px 3px 10px 3px rgb(0 0 0 / 10%);
+}
+
+.table a {
+    cursor: pointer;
+}
+
+.table td,
+.table th {
+    padding: .75rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-width: 0;
 }
