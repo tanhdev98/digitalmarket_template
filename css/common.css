@@ -862,7 +862,7 @@ section {
     align-items: center;
 }
 
-.marker::before{
+.marker::before {
     width: 0;
     height: 0;
     border: 4px solid transparent;
@@ -873,4 +873,73 @@ section {
     position: absolute;
     top: 50%;
     margin-top: -4px;
+}
+
+.manage-file,
+.manage-screenshot {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    background: #fff;
+    text-align: center;
+}
+
+.manage-screenshot>label {
+    padding: 118px 0;
+    border: 2px dashed #e9ecef;
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.manage-file>label {
+    padding: 30px;
+    border: 2px dashed #e9ecef;
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.manage-file>label:hover,
+.manage-screenshot>label:hover {
+    border-color: #ced4da;
+}
+
+.marker.right {
+    left: unset;
+    right: -34px;
+}
+
+.marker.right::before {
+    border-left-color: transparent;
+    border-right-color: #ffca2c;
+    right: auto;
+    left: -8px;
+}
+
+.input-group-prepend {
+    margin-right: -1px;
+    width: 35px;
+}
+
+.input-group .input-group-prepend .input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    justify-content: center;
+}
+
+.bootstrap-tagsinput {
+    width: 100%;
+}
+
+.bootstrap-tagsinput input{
+    width: 100%;
+}
+
+.bootstrap-tagsinput .tag {
+    border-color: #dee2e6;
+    background: #f8f9fa;
+    font-size: 12px;
+    padding: 0 6px;
+    border-radius: 4px;
+    color: #343a40;
 }
