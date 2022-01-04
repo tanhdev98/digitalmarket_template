@@ -10,7 +10,7 @@
 
     <link rel="icon" href="../favicon/favicon-16x16.png" type="favicon-16x16">
     <!-- title -->
-    <title>Contact - Digital Market</title>
+    <title>Profile - Digital Market</title>
     <!-- flickity v2.2 -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- bootstrap 5.0.2 -->
@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <div id="page" class="d-flex flex-column bg-gray">
+    <div id="page" class="d-flex flex-column bg-gray site">
         <header class="p-3 bg-dark-blue text-white">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -81,9 +81,16 @@
                             <span class="account-text">My Account</span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarUser">
-                            <li><a class="dropdown-item" href="../html/profile.html">Setting</a></li>
+                            <li><a class="dropdown-item" href="../html/profile.html"> Setting</a></li>
                             <li><a class="dropdown-item" href="../html/history.html">History</a></li>
-                            <li><a class="dropdown-item" href="../html/open-shop.html">Open shop</a></li>
+                            <li>
+                                <div class="divider">
+                                    <hr>
+                                </div>
+                            </li>
+                            <li><a class="dropdown-item" href="../html/items.html">Items</a></li>
+                            <li><a class="dropdown-item" href="../html/sales.html">Sales</a></li>
+                            <li><a class="dropdown-item" href="../html/upload-item.html">Upload</a></li>
                             <li>
                                 <div class="divider">
                                     <hr>
@@ -102,72 +109,31 @@
             <section class="bg-gradient space-sm">
                 <div class="container">
                     <h1 class="fw-normal text-center">
-                        Contact us
+                        My Account
                     </h1>
                 </div>
             </section>
-            <section class="space-lg text-center">
+            <section class="pt-2 pb-0 pb-lg-2 bg-white text-center shadow-bottom">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6 info-wrap">
-                            <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <div class="info-element">
-                                        <div class="icon-wrap mb-3">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                        </div>
-                                        <h5 class="color-gray">ADDRESS</h5>
-                                        <p>No.8, Detech Tower, Ton That Thuyet Street, Nam Tu Liem District, Hanoi City,
-                                            Viet Nam</p>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="info-element">
-                                        <div class="icon-wrap mb-3">
-                                            <i class="fas fa-envelope"></i>
-                                        </div>
-                                        <h5 class="color-gray">EMAIL</h5>
-                                        <p class="mb-1">hi@digitalmarket.com</p>
-                                        <p>support@digitalmarket.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <div class="info-element">
-                                        <div class="icon-wrap mb-3">
-                                            <i class="fas fa-phone-alt"></i>
-                                        </div>
-                                        <h5 class="color-gray">CALL US</h5>
-                                        <p class="mb-1">1 (234) 567-890</p>
-                                        <p>1 (234) 567-891</p>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="info-element">
-                                        <h5 class="color-gray">SOCIAL MEDIA</h5>
-                                        <p class="mb-1">Contact us for a quote. Help or to join the team.</p>
-                                        <div class="social-group mt-4">
-                                            <a href="" target="_blank" class="social-url">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                            <a href="" target="_blank" class="social-url">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                            <a href="" target="_blank" class="social-url">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                            <a href="" target="_blank" class="social-url">
-                                                <i class="fab fa-pinterest"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="nav-scroll">
+                        <a href="../html/items.html" class="my-1 mx-2 text-primary">Items</a>
+                        <a href="../html/sales.html" class="my-1 mx-2 text-primary">Sales</a>
+                        <a href="../html/upload-item.html" class="my-1 mx-2">Upload Item</a>
+                    </div>
+                </div>
+            </section>
+            <section class="space-sm">
+                <div class="container">
+                    <!-- <p class="text-center">You have not made any purchase</p> -->
+                    <div class="card w-50 mx-auto">
+                        <div class="card-header">
+                            Register to become a Shop
                         </div>
-                        <div class="col-md-12 col-lg-6">
-                            <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
-                                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ25LLLrNUNDERiNA7iiPmZDk&key=AIzaSyDHyl94u5kfZN89RAmcuue1ke6CSotCtmY"></iframe>
+                        <div class="card-body">
+
+                        </div>
+                        <div class="card-footer text-end">
+                            <a class="btn btn-primary"><i class="fas fa-upload"></i> Upload</a>
                         </div>
                     </div>
                 </div>
@@ -274,6 +240,31 @@
     <script src="../js/search.js"></script>
     <!-- common js -->
     <script src="../js/common.js"></script>
+    <script>
+        // preview avatar upload
+        $(document).ready(function () {
+
+            var readURL = function (input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('.profile-pic').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            $(".file-upload").on('change', function () {
+                readURL(this);
+            });
+
+            $(".upload-button").on('click', function () {
+                $(".file-upload").click();
+            });
+        });
+    </script>
 </body>
 
 </html>
