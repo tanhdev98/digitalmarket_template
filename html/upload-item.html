@@ -10,7 +10,7 @@
 
     <link rel="icon" href="../favicon/favicon-16x16.png" type="favicon-16x16">
     <!-- title -->
-    <title>Profile - Digital Market</title>
+    <title>Upload - Digital Market</title>
     <!-- bootstrap tags input css -->
     <link rel="stylesheet" href="../css/bootstrap-tagsinput.css">
     <!-- flickity v2.2 -->
@@ -91,7 +91,7 @@
                                     <hr>
                                 </div>
                             </li>
-                            <li><a class="dropdown-item" href="../html/items.html">Items</a></li>
+                            <li><a class="dropdown-item" href="../html/items-live.html">Items</a></li>
                             <li><a class="dropdown-item" href="../html/sales.html">Sales</a></li>
                             <li><a class="dropdown-item" href="../html/upload-item.html">Upload</a></li>
                             <li>
@@ -112,14 +112,14 @@
             <section class="bg-gradient space-sm">
                 <div class="container">
                     <h1 class="fw-normal text-center">
-                        My Account
+                        Manage
                     </h1>
                 </div>
             </section>
             <section class="pt-2 pb-0 pb-lg-2 bg-white text-center shadow-bottom">
                 <div class="container">
                     <div class="nav-scroll">
-                        <a href="../html/items.html" class="my-1 mx-2 text-primary">Items</a>
+                        <a href="../html/items-live.html" class="my-1 mx-2 text-primary">Items</a>
                         <a href="../html/sales.html" class="my-1 mx-2 text-primary">Sales</a>
                         <a href="../html/upload-item.html" class="my-1 mx-2">Upload Item</a>
                     </div>
@@ -150,7 +150,7 @@
                                                     <i class="fas fa-upload fa-5x"></i>
                                                 </p>
                                                 <p>
-                                                    <b>Upload Product Images</b>
+                                                    <b>Upload Product Images <span class="text-danger">*</span></b>
                                                 </p>
                                                 <small>Images must be at least 1200x630px.<br> in JPG or PNG format and
                                                     2MB maximum.</small>
@@ -162,6 +162,7 @@
                                             </span>
                                         </div>
                                         <div class="position-relative mb-2">
+                                            <label for="">Description <span class="text-danger">*</span></label>
                                             <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
                                             <span class="btn btn-warning marker" data-bs-toggle="tooltip"
                                                 data-bs-html="true" data-placement="bottom"
@@ -177,7 +178,7 @@
                                                     <i class="fas fa-upload fa-5x"></i>
                                                 </p>
                                                 <p>
-                                                    <b>Upload Product</b>
+                                                    <b>Upload Product <span class="text-danger">*</span></b>
                                                 </p>
                                                 <small>Attach only file for sale. 4GB max.</small>
                                             </label>
@@ -208,7 +209,7 @@
                                             <div class="card-header">Properties</div>
                                             <div class="card-body">
                                                 <div class="form-group">
-                                                    <label for="">Category</label>
+                                                    <label for="">Category <span class="text-danger">*</span></label>
                                                     <select class="form-control">
                                                         <option value="">Fonts</option>
                                                         <option value="">Code</option>
@@ -219,7 +220,7 @@
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="">Version</label>
+                                                    <label for="">Version <span class="text-danger">*</span></label>
                                                     <input type="number" placeholder="Product version"
                                                         class="form-control">
                                                 </div>
@@ -258,7 +259,7 @@
                             </form>
                         </div>
                         <div class="card-footer text-end">
-                            <a class="btn btn-primary"><i class="fas fa-upload"></i> Upload</a>
+                            <a class="btn btn-primary"><i class="fas fa-upload"></i> Upload for review</a>
                         </div>
                     </div>
                 </div>

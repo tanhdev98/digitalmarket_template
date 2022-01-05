@@ -10,7 +10,9 @@
 
     <link rel="icon" href="../favicon/favicon-16x16.png" type="favicon-16x16">
     <!-- title -->
-    <title>Checkout - Digital Market</title>
+    <title>Items - Digital Market</title>
+    <!-- bootstrap tags input css -->
+    <link rel="stylesheet" href="../css/bootstrap-tagsinput.css">
     <!-- flickity v2.2 -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- bootstrap 5.0.2 -->
@@ -23,6 +25,7 @@
     <link rel="stylesheet" href="../css/common.css">
     <!-- common responsive -->
     <link rel="stylesheet" href="../css/responsive.css">
+
 </head>
 
 <body>
@@ -81,9 +84,16 @@
                             <span class="account-text">My Account</span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarUser">
-                            <li><a class="dropdown-item" href="../html/profile.html">Setting</a></li>
+                            <li><a class="dropdown-item" href="../html/profile.html"> Setting</a></li>
                             <li><a class="dropdown-item" href="../html/history.html">History</a></li>
-                            <li><a class="dropdown-item" href="../html/open-shop.html">Open shop</a></li>
+                            <li>
+                                <div class="divider">
+                                    <hr>
+                                </div>
+                            </li>
+                            <li><a class="dropdown-item" href="../html/items.html">Items</a></li>
+                            <li><a class="dropdown-item" href="../html/sales.html">Sales</a></li>
+                            <li><a class="dropdown-item" href="../html/upload-item.html">Upload</a></li>
                             <li>
                                 <div class="divider">
                                     <hr>
@@ -102,92 +112,114 @@
             <section class="bg-gradient space-sm">
                 <div class="container">
                     <h1 class="fw-normal text-center">
-                        Checkout
+                        Manage
                     </h1>
                 </div>
             </section>
-            <section class="space-sm py-2 py-md-4">
+            <section class="pt-2 pb-0 pb-lg-2 bg-white text-center shadow-bottom">
                 <div class="container">
-                    <!-- if cart item empty -->
-                    <!-- <div class="is-empty">
-                        <div class="text-center mb-2">
-                            <img width="128" height="128" src="../img/empty-cart.png" alt="empty cart">
-                        </div>
-                        <h4 class="mb-0">Oops! Your cart is empty !</h4>
-                        <p class="mb-5">Check our category and find something for you.</p>
-                        <a class="btn btn-brand mt-4" href="../html/all-product.html">Check category</a>
-                    </div> -->
-                    <!-- if cart item > 0 -->
-                    <div class="no-empty">
-                        <form action="">
-                            <div class="card">
-                                <table class="table mb-0">
-                                    <thead>
-                                        <tr class="text-uppercase small">
-                                            <th class="border-top-0">
-                                                <div class="mx-1">Item name</div>
-                                            </th>
-                                            <th class="border-top-0">
-                                                <div class="mx-1">Item price</div>
-                                            </th>
-                                            <th class="border-top-0">
-                                                <div class="mx-1">Actions</div>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="border-top border-bottom">
-                                            <td class="align-middle">
-                                                <div class="d-flex align-items-center m-1">
-                                                    <div class="cart-img">
-                                                        <img width="80" height="42"
-                                                            src="../img/product/autowork-400x210.png" alt="">
-                                                    </div>
-                                                    <span class="ms-2 fw-bold">Autowork — Car Trade & Service WordPress
-                                                        Theme</span>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle">
-                                                <div class="m-1">$<span>39</span></div>
-                                            </td>
-                                            <td class="align-middle">
-                                                <div class="m-1">
-                                                    <a class="pe-auto">Remove</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th colspan="3">
-                                                <div class="mx-1">Total: $<span data-subtotal="39"
-                                                        data-total="39">39</span></div>
-                                            </th>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                        </form>
-                        <form action="">
-                            <fieldset>
-                                <legend>Select Payment Method</legend>
-                            </fieldset>
-                            <div class="select-method-payment">
-                                <label for="gateway-paypal" class="me-3">
-                                    <input type="radio" name="payment-mode" class="me-1" checked>
-                                    <span>Paypal</span>
-                                </label>
-                                <label for="gateway-momo" class="me-3">
-                                    <input type="radio" name="payment-mode" class="me-1">
-                                    <span>Momo</span>
-                                </label>
-                            </div>
-                        </form>
-                        <div class="d-flex justify-content-end">
-                            <a href="../html/index.html" class="btn btn-outline-primary me-3">Continue Shopping</a>
-                            <a class="btn btn-success"><i class="fas fa-money-check-alt me-2"></i>
-                                Purchase</a>
-                        </div>
+                    <div class="nav-scroll">
+                        <a href="../html/items.html" class="my-1 mx-2">Items</a>
+                        <a href="../html/sales.html" class="my-1 mx-2 text-primary">Sales</a>
+                        <a href="../html/upload-item.html" class="my-1 mx-2 text-primary">Upload Item</a>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-white tabs">
+                <div class="container">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../html/items-live.html">Live (3)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/items-pending.html">Pending review (1)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/items-fixes.html">Fixes needed (2)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/items-rejected.html">Rejected (4)</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="space-none">
+                <div class="container">
+                    <div class="product-list table-responsive">
+                        <table class="table table-borderless align-items-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Sale</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Earning</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white">
+                                    <th scope="row" class="product-info">
+                                        <a href="" class="d-flex align-items-center">
+                                            <img width="80" height="42" src="../img/product/autowork-400x210.png" alt=""
+                                                class="rounded me-3">
+                                            <div style="flex: 1;">Start – Responsive One Page Template</div>
+                                        </a>
+                                    </th>
+                                    <td class="product-sale">100</td>
+                                    <td class="product-price">$9</td>
+                                    <td class="product-earning">$8.5</td>
+                                    <td class="product-category">Code</td>
+                                    <td class="product-date">Wednesday, January 5, 2022</td>
+                                    <td class="product-action">
+                                        <a href=""><i class="fas fa-download me-2"></i></a>
+                                        <a href=""><i class="fas fa-pencil-alt"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="table-divider"></tr>
+                                <tr class="bg-white">
+                                    <th scope="row" class="product-info">
+                                        <a href="" class="d-flex align-items-center">
+                                            <img width="80" height="42"
+                                                src="../img/product/deals-metabox-1200x630-400x210.png" alt=""
+                                                class="rounded me-3">
+                                            <div style="flex: 1;">Se7en – Flat One Page Template</div>
+                                        </a>
+                                    </th>
+                                    <td class="product-sale">100</td>
+                                    <td class="product-price">$9</td>
+                                    <td class="product-earning">$8.5</td>
+                                    <td class="product-category">Code</td>
+                                    <td class="product-date">Wednesday, January 5, 2022</td>
+                                    <td class="product-action">
+                                        <a href=""><i class="fas fa-download me-2"></i></a>
+                                        <a href=""><i class="fas fa-pencil-alt"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="table-divider"></tr>
+                                <tr class="bg-white">
+                                    <th scope="row" class="product-info">
+                                        <a href="" class="d-flex align-items-center">
+                                            <img width="80" height="42"
+                                                src="../img/makiplace-magenta-rose-font-66968-1582539915.jpg" alt=""
+                                                class="rounded me-3">
+                                            <div style="flex: 1;">Liberty – One Page HTML Template</div>
+                                        </a>
+                                    </th>
+                                    <td class="product-sale">100</td>
+                                    <td class="product-price">$9</td>
+                                    <td class="product-earning">$8.5</td>
+                                    <td class="product-category">Code</td>
+                                    <td class="product-date">Wednesday, January 5, 2022</td>
+                                    <td class="product-action">
+                                        <a href=""><i class="fas fa-download me-2"></i></a>
+                                        <a href=""><i class="fas fa-pencil-alt"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="table-divider"></tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </section>
@@ -293,6 +325,9 @@
     <script src="../js/search.js"></script>
     <!-- common js -->
     <script src="../js/common.js"></script>
+
+    <!-- bootstrap tags input js -->
+    <script src="../js/bootstrap-tagsinput.js"></script>
 </body>
 
 </html>

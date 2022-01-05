@@ -641,11 +641,13 @@ section {
     background: crimson;
 }
 
+.product-rating .star-rating>i,
 .card-product .star-rating>i,
 .card-product {
     font-size: 12px;
 }
 
+.product-rating .star-rating>i.checked,
 .card-product .star-rating>i.checked {
     color: orange;
 
@@ -931,7 +933,7 @@ section {
     width: 100%;
 }
 
-.bootstrap-tagsinput input{
+.bootstrap-tagsinput input {
     width: 100%;
 }
 
@@ -942,4 +944,72 @@ section {
     padding: 0 6px;
     border-radius: 4px;
     color: #343a40;
+}
+
+.nav-tabs .nav-link {
+    color: #575c62;
+}
+
+/* table sale */
+
+tr.table-divider {
+    height: .75rem;
+    pointer-events: none;
+}
+
+.table td,
+.table th,
+.table-borderless thead th {
+    border: 0;
+}
+
+.table-borderless tbody tr th {
+    font-weight: 500;
+}
+
+.table-borderless tr.bg-white>th {
+    border-radius: .25rem 0 0 .25rem;
+}
+
+.table-borderless tr.bg-white>td,
+.table-borderless tr.bg-white>th {
+    padding: 1rem;
+    position: relative;
+    vertical-align: middle;
+}
+
+.table-borderless tr.bg-white>td:after,
+.table-borderless tr.bg-white>th:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.table-borderless tr.bg-white>th:after {
+    border-radius: .25rem 0 0 .25rem;
+    border-left: 1px solid #dee2e6;
+}
+
+.table-borderless tr.bg-white>td:last-child {
+    border-radius: 0 .25rem .25rem 0;
+}
+
+.table-borderless tr.bg-white>td:last-child::after {
+    border-right: 1px solid #dee2e6;
+    border-radius: 0 .25rem .25rem 0;
+}
+
+/* tabs */
+.tabs {
+    padding: 10px 0 0 0;
+}
+
+.space-none {
+    padding: 0;
 }
