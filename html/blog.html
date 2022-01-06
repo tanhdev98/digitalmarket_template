@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" href="../favicon/favicon-32x32.png" type="favicon-32x32">
+
+    <link rel="icon" href="../favicon/favicon-16x16.png" type="favicon-16x16">
+    <!-- title -->
+    <title>All product - Digital Market</title>
+    <!-- flickity v2.2 -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- bootstrap 5.0.2 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- reset css -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- font-awsome 5.15.3 -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- common css -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- common responsive -->
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div id="page" class="d-flex flex-column">
+        <header class="p-3 bg-dark-blue text-white">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="../html/index.html"
+                        class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <img src="../img/logo.png" alt="logo" class="img-fluid logo">
+                    </a>
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 navbar-menu">
+                        <li>
+                            <a href="../html/index.html" class="nav-link px-2 text-white">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarCategory" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="account-text">Category</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarCategory">
+                                <li><a class="dropdown-item" href="../html/category.html">Code</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html">Graphics</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html">Fonts</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html">Themes</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html">Template</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html">Icons</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../html/about.html" class="nav-link px-2 text-white">About</a>
+                        </li>
+                        <li>
+                            <a href="../html/contact.html" class="nav-link px-2 text-white">Contact</a>
+                        </li>
+                    </ul>
+                    <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <div class="search-wrap">
+                            <div class="icon"></div>
+                            <div class="input">
+                                <input type="text" placeholder="Search" id="search-box">
+                            </div>
+                            <!-- <div class="clear"></div> -->
+                        </div>
+                    </form>
+                    <div class="card-header me-lg-3">
+                        <a href="../html/checkout.html" role="button" class="card-button">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>0</span>
+                        </a>
+                    </div>
+                    <div class="text-end d-flex align-items-center auth">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarUser" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                            <span class="account-text">My Account</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarUser">
+                            <li><a class="dropdown-item" href="../html/profile.html">Setting</a></li>
+                            <li><a class="dropdown-item" href="../html/history.html">History</a></li>
+                            <li><a class="dropdown-item" href="../html/open-shop.html">Open shop</a></li>
+                            <li>
+                                <div class="divider">
+                                    <hr>
+                                </div>
+                            </li>
+                            <li><a class="dropdown-item" href="../html/index.html" id="logout">Logout</a></li>
+                        </ul>
+                        <!-- <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal"
+                            data-bs-target=".account-modal"><i class="fas fa-sign-in-alt"></i> Login</button>
+                        <button type="button" class="btn btn-warning">Sign-up</button> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main-container">
+            <section class="bg-gradient space-sm text-center">
+                <div class="container">
+                    <h1 class="fw-normal">
+                        Blog
+                    </h1>
+                    <div class="opacity-50 mt-1 d-none d-md-block">
+                        We deliver useful and innovative information to designers and developers.
+                    </div>
+                </div>
+            </section>
+            <section class="bg-white shadow-bottom p-0 py-2 position-sticky" style="z-index: 2; top: 0;">
+                <div class="container">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="nav-scroll">
+                            <a href="" class="my-1 mx-2">All</a>
+                            <a href="" class="my-1 mx-2 text-primary">Announcements</a>
+                            <a href="" class="my-1 mx-2 text-primary">Community</a>
+                            <a href="" class="my-1 mx-2 text-primary">Grow Your Audience</a>
+                            <a href="" class="my-1 mx-2 text-primary">How-To</a>
+                            <a href="" class="my-1 mx-2 text-primary">Inspiration</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-2 py-sm-4">
+                <div class="container">
+                    <div class="row">
+                        <!-- row -->
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/lunar-new-year-1200x630-2-400x210.png"
+                                        alt="" class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row/> -->
+                        <!-- row -->
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/lunar-new-year-1200x630-2-400x210.png"
+                                        alt="" class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row/> -->
+                        <!-- row -->
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/lunar-new-year-1200x630-2-400x210.png"
+                                        alt="" class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row/> -->
+                        <!-- row -->
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/lunar-new-year-1200x630-2-400x210.png"
+                                        alt="" class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row/> -->
+                        <!-- row -->
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/lunar-new-year-1200x630-2-400x210.png"
+                                        alt="" class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row/> -->
+                        <!-- row -->
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/lunar-new-year-1200x630-2-400x210.png"
+                                        alt="" class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row/> -->
+                        <!-- row -->
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/lunar-new-year-1200x630-2-400x210.png"
+                                        alt="" class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row/> -->
+                        <!-- row -->
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/lunar-new-year-1200x630-2-400x210.png"
+                                        alt="" class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-sm">
+                                <a href="../html/blog-detail.html">
+                                    <img width="400" height="210" src="../img/combine-merge-shapes-400x210.jpg" alt=""
+                                        class="card-img-top">
+                                </a>
+                                <div class="card-body px-2">
+                                    <div class="mx-1">
+                                        <a href="" class="text-dark fw-bold">
+                                            How to Combine/Merge Shapes In Illustrator
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-2">
+                                    <div class="mx-1 d-flex justify-content-between alight-items-center">
+                                        <div class="text-small text-muted">
+                                            <a href="" class="text-dark fw-bold">Tanhdev</a>
+                                            on
+                                            <a href="" class="text-dark fw-bold">December 21,2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row/> -->
+                        <nav class="navigation pagination justify-content-center" role="navigation" aria-label="Posts">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#"><i
+                                            class="fas fa-angle-left"></i></a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#"><i
+                                            class="fas fa-angle-right"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-dark-blue text-light footer-long py-4 py-lg-5 px-2 px-md-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3 mb-3 mb-md-0">
+                        <a href="">
+                            <img src="../img/logo.png" alt="" class="img-fluid logo mb-3">
+                        </a>
+                        <p class="text-muted">Coryright © 2021 by <a href="https://github.com/tanhdev98">tanhdev98</a>.
+                            <br>
+                            All rights reserved.</p>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-9">
+                        <div class="row no-gutters">
+                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                                <h6>Make Money</h6>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Open a Shop</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Commission Structures</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Advertise Your Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Licenses</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                                <h6>Buy Good</h6>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Today's Deals</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Pay What You Want</a>
+                                    </li>
+                                    <li>
+                                        <a href="">One Dollar Deal</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Monthly Bundle</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                                <h6>Resources</h6>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Help Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Discussions</a>
+                                    </li>
+                                    <li>
+                                        <a href="">FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                                <h6>Company</h6>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Terms of Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- jQuery 3.6.0 -->
+    <script src="../js/jquery-3.6.0.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <!-- flickity v2.2 js -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- bootstrap 5 js -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- search js -->
+    <script src="../js/search.js"></script>
+    <!-- common js -->
+    <script src="../js/common.js"></script>
+</body>
+
+</html>

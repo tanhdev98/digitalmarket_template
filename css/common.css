@@ -1013,3 +1013,45 @@ tr.table-divider {
 .space-none {
     padding: 0;
 }
+
+.white-space-nowrap {
+    white-space: nowrap;
+}
+
+.auth-form .mobile {
+    display: none;
+}
+
+.card-img-top {
+    height: auto;
+}
+
+.blog-content {
+    font-size: 1.05rem;
+    color: #212529;
+}
+
+.small {
+    font-size: .75rem;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+    color: #000;
+}
+
+.blog-content pre {
+    background: #e9ecef;
+    border: 1px solid #dee2e6;
+    padding: .75rem;
+    display: block;
+    margin: 1.5rem 0;
+    max-height: 300px;
+    overflow: auto;
+    font-size: 87.5%;
+    color: #212529;
+}

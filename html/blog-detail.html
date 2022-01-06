@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" href="../favicon/favicon-32x32.png" type="favicon-32x32">
+
+    <link rel="icon" href="../favicon/favicon-16x16.png" type="favicon-16x16">
+    <!-- title -->
+    <title>Blog Details - Digital Market</title>
+    <!-- bootstrap tags input css -->
+    <link rel="stylesheet" href="../css/bootstrap-tagsinput.css">
+    <!-- flickity v2.2 -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- bootstrap 5.0.2 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- reset css -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- font-awsome 5.15.3 -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- common css -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- common responsive -->
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+    <div id="page" class="d-flex flex-column bg-gray site">
+        <header class="p-3 bg-dark-blue text-white">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="../html/index.html"
+                        class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <img src="../img/logo.png" alt="logo" class="img-fluid logo">
+                    </a>
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 navbar-menu">
+                        <li>
+                            <a href="../html/index.html" class="nav-link px-2 text-white">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarCategory" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="account-text">Category</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarCategory">
+                                <li><a class="dropdown-item" href="../html/category.html">Code</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html">Graphics</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html">Fonts</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html">Themes</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html">Template</a></li>
+                                <li><a class="dropdown-item" href="../html/category.html">Icons</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../html/about.html" class="nav-link px-2 text-white">About</a>
+                        </li>
+                        <li>
+                            <a href="../html/contact.html" class="nav-link px-2 text-white">Contact</a>
+                        </li>
+                    </ul>
+                    <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <div class="search-wrap">
+                            <div class="icon"></div>
+                            <div class="input">
+                                <input type="text" placeholder="Search" id="search-box">
+                            </div>
+                            <!-- <div class="clear"></div> -->
+                        </div>
+                    </form>
+                    <div class="card-header me-lg-3">
+                        <a href="../html/checkout.html" role="button" class="card-button">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>0</span>
+                        </a>
+                    </div>
+                    <div class="text-end d-flex align-items-center auth">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarUser" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                            <span class="account-text">My Account</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarUser">
+                            <li><a class="dropdown-item" href="../html/profile.html"> Setting</a></li>
+                            <li><a class="dropdown-item" href="../html/history.html">History</a></li>
+                            <li>
+                                <div class="divider">
+                                    <hr>
+                                </div>
+                            </li>
+                            <li><a class="dropdown-item" href="../html/items.html">Items</a></li>
+                            <li><a class="dropdown-item" href="../html/sales.html">Sales</a></li>
+                            <li><a class="dropdown-item" href="../html/upload-item.html">Upload</a></li>
+                            <li>
+                                <div class="divider">
+                                    <hr>
+                                </div>
+                            </li>
+                            <li><a class="dropdown-item" href="../html/index.html" id="logout">Logout</a></li>
+                        </ul>
+                        <!-- <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal"
+                            data-bs-target=".account-modal"><i class="fas fa-sign-in-alt"></i> Login</button>
+                        <button type="button" class="btn btn-warning">Sign-up</button> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main-container">
+            <section class="space-sm blog-content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="blog-meta small">
+                                <span class="text-uppercase">
+                                    <a href="" rel="category tag">How-to</a>
+                                </span>
+                                <span class="mx-1">·</span>
+                                <span>By <a href="#">tanhdev</a></span>
+                                <span class="mx-1">·</span>
+                                <i class="far fa-calendar"></i>
+                                <span>January 6, 2022</span>
+                            </div>
+                            <div class="blog-title mb-3">
+                                <h1 class="mb-0 text-dark">A Guide To JavaScript Filter Function</h1>
+                            </div>
+                            <div class="blog-thumbnail mb-3">
+                                <img width="800" height="420" loading="lazy"
+                                    src="../img/javascript-filter-guide-800x420.jpg" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <p><strong>Javascript Filter</strong> is an increasingly popular method, especially when
+                                    being combined with ES6 standard. So today we&#8217;re gonna dig deeper into this
+                                    kind of method by JavaScript Filter Function Guide. Let&#8217;s begin!</p>
+                                <p><span id="more-60238"></span></p>
+                                <h2>Syntax Using Javascript Filter Function</h2>
+                                <pre>let filteredList = list.filter(callback)</pre>
+                                <p>(We use let by ES6, those who are not familiar with this should try more)</p>
+                                <p>The components are explained as below.</p>
+                                <ul>
+                                    <li><strong>filteredList:</strong> Since filter will work with Array and return a
+                                        group of Array, we need to define it as the return.</li>
+                                    <li><strong>list:</strong> is the original array before putting to Filter()</li>
+                                    <li><strong>callback:</strong> is a function of checking each item of the list and
+                                        return either <code>true</code> or <code>false</code></li>
+                                </ul>
+                                <p>Let’s talk a little bit more about the callback function. It can receive three values
+                                    as follows. Normally we only seek for the <strong>element</strong>.</p>
+                                <pre>function validateArray(element, index, arr) =&gt; {}</pre>
+                                <h2>Comparison between Filter and For Loop</h2>
+                                <p>Apparently, you can find some similarity in the usage of Filter and For Loop. Let’s
+                                    look at the example.</p>
+                                <p>Below is a loop is usually seen in Javascript:</p>
+                                <pre>let arr = [1, 2, 3, 4, 5, 6]
+let even = []
+for(var i = 0; i &lt; arr.length; i++) {
+if (arr[i] % 2 === 0) even.push(arr[i])
+}
+// even = [2,4,6]</pre>
+                                <p>The code snippet above will check every value in arr. Only values being even number
+                                    are accepted and added to <code>even</code>.</p>
+                                <p>Certainly, there is nothing wrong with the code above. Yet like traveling by
+                                    motorbike and car, though they all drive you to the destination, the way they do it
+                                    is different.</p>
+                                <p>Here is how filter does to produce the same result.</p>
+                                <pre>let arr = [1,2,3,4,5,6]
+let even = arr.filter(item =&gt; {
+return item % 2 === 0
+});
+// even = [2,4,6]</pre>
+                                <p>Isn’t it surprising? Now there is no need to be in the loop and to add every value to
+                                    one loop. When working on <code>filter()</code> function, all you need to do is
+                                    decide what to keep and <code>return true</code> to those values.</p>
+                                <p>Another good point of using filter is it runs smoothly on the latest web browser
+                                    versions as shown by the benchmark.</p>
+                                <h2>Javascript Filter Function and ES6</h2>
+                                <p>Now that you have learned about <code>filter()</code>, let’s find out about the
+                                    combination of this Javascript function and ES6.</p>
+                                <p>Please look back to the example we have just taken above. Even we have used arrow
+                                    function, we still can reduce it. We can do that because once returning value from
+                                    arrow function, you can skip <code>{}</code> brackets in the function.</p>
+                                <p>The code we have just written above can be reduced as below:</p>
+                                <pre>let event = arr.filter(item =&gt; item % 2 === 0)</pre>
+                                <p>Don’t worry, <code>item</code> can still recognize it as each item in arr so you can
+                                    use that way.</p>
+                                <h2>Conclusion</h2>
+                                <p>Thus, you have learned about how to write reduced code when using Javascript Filter
+                                    Function together with ES6. Remember to practice more and read more on <a
+                                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+                                        target="_blank" rel="noopener">MDN</a>. This is the way to help you write code
+                                    which is more logical, shorter and, of course, better.</p>
+                                <p>And finally, don&#8217;t hesitate to comment below if you have any questions or
+                                    additional ways you’ve used that work.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-dark-blue text-light footer-long py-4 py-lg-5 px-2 px-md-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3 mb-3 mb-md-0">
+                        <a href="">
+                            <img src="../img/logo.png" alt="" class="img-fluid logo mb-3">
+                        </a>
+                        <p class="text-muted">Coryright © 2021 by <a href="https://github.com/tanhdev98">tanhdev98</a>.
+                            <br>
+                            All rights reserved.</p>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-9">
+                        <div class="row no-gutters">
+                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                                <h6>Make Money</h6>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Open a Shop</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Commission Structures</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Advertise Your Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Licenses</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                                <h6>Buy Good</h6>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Today's Deals</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Pay What You Want</a>
+                                    </li>
+                                    <li>
+                                        <a href="">One Dollar Deal</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Monthly Bundle</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                                <h6>Resources</h6>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Help Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Discussions</a>
+                                    </li>
+                                    <li>
+                                        <a href="">FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                                <h6>Company</h6>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Terms of Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- jQuery 3.6.0 -->
+    <script src="../js/jquery-3.6.0.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <!-- flickity v2.2 js -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- bootstrap 5 js -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- search js -->
+    <script src="../js/search.js"></script>
+    <!-- common js -->
+    <script src="../js/common.js"></script>
+
+    <!-- bootstrap tags input js -->
+    <script src="../js/bootstrap-tagsinput.js"></script>
+</body>
+
+</html>
