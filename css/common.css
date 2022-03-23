@@ -1055,3 +1055,25 @@ tr.table-divider {
     font-size: 87.5%;
     color: #212529;
 }
+
+.start-rate.hide {
+    display: none;
+}
+
+.start-rate:hover {
+    color: #23CEA6;
+    cursor: pointer;
+}
+
+.product-rating .btn,
+.send-rate {
+    display: none;
+}
+
+.send-rate.active {
+    display: block;
+}
+
+.btn.btn-primary.active{
+    display: inline-block;
+}

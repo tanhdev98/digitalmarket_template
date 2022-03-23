@@ -10,7 +10,9 @@
 
     <link rel="icon" href="../favicon/favicon-16x16.png" type="favicon-16x16">
     <!-- title -->
-    <title>History - Digital Market</title>
+    <title>Items - Digital Market</title>
+    <!-- bootstrap tags input css -->
+    <link rel="stylesheet" href="../css/bootstrap-tagsinput.css">
     <!-- flickity v2.2 -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- bootstrap 5.0.2 -->
@@ -23,6 +25,7 @@
     <link rel="stylesheet" href="../css/common.css">
     <!-- common responsive -->
     <link rel="stylesheet" href="../css/responsive.css">
+
 </head>
 
 <body>
@@ -81,9 +84,16 @@
                             <span class="account-text">My Account</span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarUser">
-                            <li><a class="dropdown-item" href="../html/profile.html">Setting</a></li>
+                            <li><a class="dropdown-item" href="../html/profile.html"> Setting</a></li>
                             <li><a class="dropdown-item" href="../html/history.html">History</a></li>
-                            <li><a class="dropdown-item" href="../html/open-shop.html">Open shop</a></li>
+                            <li>
+                                <div class="divider">
+                                    <hr>
+                                </div>
+                            </li>
+                            <li><a class="dropdown-item" href="../html/items.html">Items</a></li>
+                            <li><a class="dropdown-item" href="../html/sales.html">Sales</a></li>
+                            <li><a class="dropdown-item" href="../html/upload-item.html">Upload</a></li>
                             <li>
                                 <div class="divider">
                                     <hr>
@@ -102,143 +112,63 @@
             <section class="bg-gradient space-sm">
                 <div class="container">
                     <h1 class="fw-normal text-center">
-                        My Account
+                        Manage
                     </h1>
                 </div>
             </section>
             <section class="pt-2 pb-0 pb-lg-2 bg-white text-center shadow-bottom">
                 <div class="container">
                     <div class="nav-scroll">
-                        <a href="../html/profile.html" class="my-1 mx-2 text-primary">Profile</a>
-                        <a href="../html/history.html" class="my-1 mx-2">History</a>
-                        <a href="../html/open-shop.html" class="my-1 mx-2 text-primary">Open shop</a>
+                        <a href="../html/items-live.html" class="my-1 mx-2 text-primary">Items</a>
+                        <a href="../html/sales.html" class="my-1 mx-2">Sales</a>
+                        <a href="../html/upload-item.html" class="my-1 mx-2 text-primary">Upload Item</a>
                     </div>
                 </div>
             </section>
-            <section class="space-sm">
+            <section class="bg-white tabs">
                 <div class="container">
-                    <!-- <p class="text-center">You have not made any purchase</p> -->
-                    <div class="card">
-                        <table class="table mb-0">
-                            <thead>
-                                <tr class="text-uppercase small">
-                                    <th class="border-top-0">
-                                        <div class="mx-1">Item name</div>
-                                    </th>
-                                    <th class="border-top-0">
-                                        <div class="mx-1">Version</div>
-                                    </th>
-                                    <th class="border-top-0">
-                                        <div class="mx-1">Your rating</div>
-                                    </th>
-                                    <th class="border-top-0">
-                                        <div class="mx-1">Actions</div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle">
-                                        <div class="d-flex align-items-center m-1">
-                                            <div class="cart-img">
-                                                <img width="80" height="42" src="../img/product/autowork-400x210.png"
-                                                    alt="">
-                                            </div>
-                                            <span class="ms-2 fw-bold">
-                                                Autowork — Car Trade & Service WordPress Theme
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td class="align-middle">
-                                        <div class="m-1">
-                                            1.0
-                                        </div>
-                                    </td>
-                                    <td class="align-middle product-rating">
-                                        <span class="star-rating">
-                                            <i class="fa fa-star checked"></i>
-                                            <i class="fa fa-star checked"></i>
-                                            <i class="fa fa-star checked"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </span>
-                                    </td>
-                                    <td class="align-middle">
-                                        <div class="m-1">
-                                            <a class="pe-auto">Download</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="align-middle">
-                                        <div class="d-flex align-items-center m-1">
-                                            <div class="cart-img">
-                                                <img width="80" height="42" src="../img/product/autowork-400x210.png"
-                                                    alt="">
-                                            </div>
-                                            <span class="ms-2 fw-bold">
-                                                Autowork — Car Trade & Service WordPress Theme
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td class="align-middle">
-                                        <div class="m-1">
-                                            1.0
-                                        </div>
-                                    </td>
-                                    <td class="align-middle product-rating">
-                                        <span class="start-rate">Send rate</span>
-                                        <span class="star-rating send-rate">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </span>
-                                        <button class="btn btn-primary">Send</button>
-                                    </td>
-                                    <td class="align-middle">
-                                        <div class="m-1">
-                                            <a class="pe-auto">Download</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="align-middle">
-                                        <div class="d-flex align-items-center m-1">
-                                            <div class="cart-img">
-                                                <img width="80" height="42" src="../img/product/autowork-400x210.png"
-                                                    alt="">
-                                            </div>
-                                            <span class="ms-2 fw-bold">
-                                                Autowork — Car Trade & Service WordPress Theme
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td class="align-middle">
-                                        <div class="m-1">
-                                            1.0
-                                        </div>
-                                    </td>
-                                    <td class="align-middle product-rating">
-                                        <span class="start-rate">Send rate</span>
-                                        <span class="star-rating send-rate">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </span>
-                                        <button class="btn btn-primary">Send</button>
-                                    </td>
-                                    <td class="align-middle">
-                                        <div class="m-1">
-                                            <a class="pe-auto">Download</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/sales.html">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/request.html">Request (1)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../html/cash-out.html">Cash out</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="space-none">
+                <div class="container">
+                    <!-- <p class="text-center">You don't have money in your account</p> -->
+                    <div class="card w-50 mx-auto my-5">
+                        <div class="card-header">
+                            Create a withdrawal request
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Phone number</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Enter the amount you want to withdraw</label>
+                                <small style="display: block;">Your remaining amount is: 54$</small>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                        <div class="card-footer text-end">
+                            <a class="btn btn-primary">Send request</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -345,56 +275,8 @@
     <!-- common js -->
     <script src="../js/common.js"></script>
 
-    <script>
-        $('.start-rate').click(function () {
-            $('.start-rate').removeClass('hide');
-            $('.send-rate').removeClass('active');
-            $('.btn.btn-primary').removeClass('active');
-            if ($(this).hasClass('hide')) {
-                $(this).removeClass('hide');
-            } else {
-                $(this).addClass('hide');
-                $(this).siblings().addClass('active');
-            }
-        });
-
-        // hover star rating
-        function StarRating() {
-            this.init();
-        };
-
-        StarRating.prototype.init = function () {
-            this.stars = document.querySelectorAll('.send-rate i');
-            for (var i = 0; i < this.stars.length; i++) {
-                this.stars[i].setAttribute('data-count', i);
-                this.stars[i].addEventListener('mouseenter', this.enterStarListener.bind(this));
-            }
-            document.querySelector('.send-rate i').addEventListener('mouseleave', this.leaveStarListener.bind(
-                this));
-        };
-
-        StarRating.prototype.enterStarListener = function (e) {
-            this.fillStarsUpToElement(e.target);
-        };
-
-        StarRating.prototype.leaveStarListener = function () {
-            this.fillStarsUpToElement(null);
-        };
-
-        StarRating.prototype.fillStarsUpToElement = function (el) {
-            // Remove all hover states:
-            for (var i = 0; i < this.stars.length; i++) {
-                if (el == null || this.stars[i].getAttribute('data-count') > el.getAttribute('data-count')) {
-                    this.stars[i].classList.remove('checked');
-                } else {
-                    this.stars[i].classList.add('checked');
-                }
-            }
-        };
-
-        // Run:
-        new StarRating();
-    </script>
+    <!-- bootstrap tags input js -->
+    <script src="../js/bootstrap-tagsinput.js"></script>
 </body>
 
 </html>
